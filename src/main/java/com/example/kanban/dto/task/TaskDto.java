@@ -9,7 +9,6 @@ public record TaskDto(
         String status,
         String priority,
         Integer userId,
-
         Integer assignee,
         LocalDateTime deadLine) {
 }

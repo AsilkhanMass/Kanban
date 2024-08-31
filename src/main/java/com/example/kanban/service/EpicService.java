@@ -4,7 +4,7 @@ import com.example.kanban.dto.task.EpicDto;
 
 public interface EpicService {
     void create(EpicDto dto);
-    void getById(Integer id);
+    EpicDto getById(Integer id);
     void delete(Integer id);
-    void update(EpicDto dto);
+
 }
