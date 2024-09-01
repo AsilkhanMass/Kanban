@@ -52,8 +52,8 @@ public class UserServiceImp implements UserService {
         }
         UserEntity user = UserEntity.builder()
                 .email(dto.email())
-                .name(dto.name())
-                .password(dto.password())
+                .name(dto.username())
+                .password(passwordEncoder.encode(dto.password()))
                 .type("SIMPLE")
                 .phoneNumber(dto.phoneNumber())
                 .build();
